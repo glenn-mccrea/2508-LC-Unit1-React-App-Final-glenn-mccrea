@@ -1,0 +1,20 @@
+footer {
+  background-color: darkblue;
+  width: 100%;
+  text-align: center;
+  margin: 2.5%;
+  padding: 15px;
+}
+
+.button-div {
+  background-color: #111827;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  width: auto;
+  margin: 10px;
+}
