@@ -1,17 +1,17 @@
 footer {
-  background-color: darkblue;
+  background-color: #194c4d;
   width: 100%;
   text-align: center;
   padding: 15px;
-  border-top: solid #565656 5px;
+  border-top: solid #000000 5px;
 }
 
-.button-div {
-  background-color: #111827;
+.button-div-footer {
+  background-color: #000000;
   border-radius: 0.75rem;
   box-sizing: border-box;
   color: #ffffff;
-  font-size: 1.125rem;
+  font-size: 0.8;
   font-weight: 400;
   padding: 0.75rem 1.2rem;
   text-align: center;
