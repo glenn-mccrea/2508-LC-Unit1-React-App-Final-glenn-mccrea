@@ -2,7 +2,6 @@ header {
   background-color: darkblue;
   width: 100%;
   text-align: center;
-  margin: 2.5%;
 }
 #header-title {
   display: flex;
@@ -15,12 +14,12 @@ header {
   background-color: rgb(30, 64, 255);
   font-size: 1.5rem;
   color: black;
-  padding: 10px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  border-top: solid white 5px;
+  border-top: solid #565656 5px;
 }
 
 #header-nav-button-container {

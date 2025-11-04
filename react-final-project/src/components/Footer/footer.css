@@ -2,8 +2,8 @@ footer {
   background-color: darkblue;
   width: 100%;
   text-align: center;
-  margin: 2.5%;
   padding: 15px;
+  border-top: solid #565656 5px;
 }
 
 .button-div {
