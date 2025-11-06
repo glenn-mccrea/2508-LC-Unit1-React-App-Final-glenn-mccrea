@@ -1,20 +1,16 @@
-#aboutpage-div {
+#logpage-div {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin: none;
-  background-image: url("/react-final-project/src/assets/homepage-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   flex: 1;
-  display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
 }
 
-#aboutpage-text-container {
+form {
   color: white;
-  margin: 5%;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 0.75rem;
   min-height: auto;
