@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/HomePage";
 import LogPage from "./components/LogPage/LogPage";
+import ViewerPage from "./components/ViewerPage/ViewerPage";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       {/*       <HomePage /> */}
       {/*  <AboutPage /> */}
-      <LogPage />
+      {/*   <LogPage /> */}
+      <ViewerPage />
       <Footer />
     </div>
   );
