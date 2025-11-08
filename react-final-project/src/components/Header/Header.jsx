@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import ReuseButton from "../ReuseButton/ReuseButton";
 
 const Header = () => {
   return (
@@ -9,15 +10,18 @@ const Header = () => {
       </div>
       <div id="header-nav">
         <nav id="header-nav-button-container">
-          <a href="" class="button-div">
-            Home
-          </a>
-          <a href="" class="button-div">
-            Log Now
-          </a>
-          <a href="" class="button-div">
-            Log Viewer
-          </a>
+          <ReuseButton idName={"mobile-menu"} text={"Menu"} />
+          <div id="expanded-menu-items">
+            <a href="" class="button-div">
+              Home
+            </a>
+            <a href="" class="button-div">
+              Log Now
+            </a>
+            <a href="" class="button-div">
+              Log Viewer
+            </a>
+          </div>
         </nav>
       </div>
     </header>

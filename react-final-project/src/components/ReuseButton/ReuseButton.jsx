@@ -1,9 +1,12 @@
 import React from "react";
+import "./reuse-button.css";
 
-const ReuseButton = (text) => {
+const ReuseButton = ({ text, idName }) => {
   return (
     <div>
-      <button className="reuse-button">${text}</button>
+      <div className="reuse-button" id={idName}>
+        {text}
+      </div>
     </div>
   );
 };
