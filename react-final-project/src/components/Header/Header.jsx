@@ -11,6 +11,17 @@ const Header = () => {
       <div id="header-nav">
         <nav id="header-nav-button-container">
           <ReuseButton idName={"mobile-menu"} text={"Menu"} />
+          <div id="dropdown-menu-items">
+            <a href="" class="button-div">
+              Home
+            </a>
+            <a href="" class="button-div">
+              Log Now
+            </a>
+            <a href="" class="button-div">
+              Log Viewer
+            </a>
+          </div>
           <div id="expanded-menu-items">
             <a href="" class="button-div">
               Home
