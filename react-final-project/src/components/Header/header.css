@@ -19,6 +19,7 @@ header {
   justify-items: center;
   align-items: center;
   border-top: solid #000 5px;
+  padding: 20px;
 }
 
 #header-nav-button-container {
@@ -38,4 +39,26 @@ header {
   text-align: center;
   width: auto;
   margin: 10px;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #expanded-menu-items {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+
+  #header-nav {
+    background-color: #29797a;
+    font-size: 1rem;
+    color: black;
+    padding: 1px;
+    align-items: last baseline;
+  }
 }
