@@ -1,5 +1,5 @@
 import React from "react";
-import "./logpage.css";
+import "./log-page.css";
 
 const LogPage = () => {
   return (
