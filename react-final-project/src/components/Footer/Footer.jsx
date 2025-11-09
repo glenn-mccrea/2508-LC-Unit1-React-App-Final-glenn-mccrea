@@ -1,13 +1,14 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
     <footer>
       <div id="footer-links">
-        <a href="" class="button-div-footer">
-          About
-        </a>
+        <Link to="/about" className="button-div">
+          About HSDT
+        </Link>
       </div>
     </footer>
   );
