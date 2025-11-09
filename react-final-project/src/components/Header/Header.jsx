@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import ReuseButton from "../ReuseButton/ReuseButton";
+import { Link } from "react-router";
 
 const Header = () => {
   return (
@@ -12,26 +13,26 @@ const Header = () => {
         <nav id="header-nav-button-container">
           <ReuseButton idName={"mobile-menu"} text={"Menu"} />
           <div id="dropdown-menu-items">
-            <a href="" class="button-div">
+            <Link to="/home" className="button-div">
               Home
-            </a>
-            <a href="" class="button-div">
-              Log Now
-            </a>
-            <a href="" class="button-div">
+            </Link>
+            <Link to="/log" className="button-div">
+              Log Activity
+            </Link>
+            <Link to="/viewer" className="button-div">
               Log Viewer
-            </a>
+            </Link>
           </div>
           <div id="expanded-menu-items">
-            <a href="" class="button-div">
+            <Link to="/home" className="button-div">
               Home
-            </a>
-            <a href="" class="button-div">
-              Log Now
-            </a>
-            <a href="" class="button-div">
+            </Link>
+            <Link to="/log" className="button-div">
+              Log Activity
+            </Link>
+            <Link to="/viewer" className="button-div">
               Log Viewer
-            </a>
+            </Link>
           </div>
         </nav>
       </div>
