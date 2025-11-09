@@ -44,11 +44,3 @@ p {
     transform: rotate(360deg);
   }
 }
-
-#no-logs-statement {
-  visibility: hidden;
-}
-
-#loading-statement {
-  visibility: visible;
-}
