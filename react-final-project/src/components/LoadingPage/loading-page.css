@@ -7,23 +7,16 @@ p {
 #loading-page-main-div {
   display: flex;
   flex-direction: column;
-  align-content: space-around;
-  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
   background-color: #000;
   border-radius: 0.75rem;
   margin: 20px;
-  height: 200px;
-  width: 200px;
-  padding-bottom: 30px;
 }
 
 .loader {
   width: 48px;
   height: 48px;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
   position: relative;
 }
 .loader::after,
