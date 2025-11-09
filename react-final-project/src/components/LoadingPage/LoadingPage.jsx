@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./loading-page.css";
 
 const LoadingPage = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timer); /* This is a cleanup function. */
+  }, []);
 
   return (
     <div id="loading-page-main-div">
