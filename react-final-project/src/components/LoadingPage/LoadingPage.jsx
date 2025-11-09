@@ -4,10 +4,17 @@ import "./loading-page.css";
 const LoadingPage = () => {
   return (
     <div id="loading-page-main-div">
-      <p>
-        <em>loading...</em>
-      </p>
-      <span className="loader"></span>
+      <div id="loading-statement">
+        <p>
+          <em>loading...</em>
+        </p>
+
+        <p className="loader"></p>
+      </div>
+
+      <div id="no-logs-statement">
+        <p>Sorry, no log items to see here.</p>
+      </div>
     </div>
   );
 };
