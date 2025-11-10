@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./log-page.css";
 
 const LogPage = ({ addCard }) => {
-  const [subject, setSubject] = (useState = "");
-  const [duration, setDuration] = (useState = "15");
+  const [subject, setSubject] = useState("");
+  const [duration, setDuration] = useState("15");
   const [materials, setMaterials] = useState("");
-  const [notes, setNotes] = (useState = "");
+  const [notes, setNotes] = useState("");
 
   return (
     <main>
@@ -35,7 +35,12 @@ const LogPage = ({ addCard }) => {
 
           <label htmlFor="activity-duration">Duration: </label>
           <br />
-          <select name="activity-duration" id="activity-duration">
+          <select
+            name="activity-duration"
+            id="activity-duration"
+            value={duration}
+            onChange={(e) => setDuration(e.target.value)}
+          >
             <option value="15">15 Minutes</option>
             <option value="20">20 Minutes</option>
             <option value="30">30 Minutes</option>
@@ -54,6 +59,8 @@ const LogPage = ({ addCard }) => {
             id="materials-input"
             name="materials"
             placeholder="Enter materials used"
+            value={materials}
+            onChange={(e) => setMaterials(e.target.value)}
           />
           <br />
           <br />
@@ -65,6 +72,8 @@ const LogPage = ({ addCard }) => {
             name="notes"
             placeholder="Activity notes"
             style={{ height: "100px" }}
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
           />
           <br />
 
