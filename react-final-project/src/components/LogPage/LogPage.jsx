@@ -2,15 +2,40 @@ import React, { useState } from "react";
 import "./log-page.css";
 
 const LogPage = ({ addCard }) => {
-  const [subject, setSubject] = useState("");
+  const [subject, setSubject] =
+    useState(""); /* define the useState for all items */
   const [duration, setDuration] = useState("15");
   const [materials, setMaterials] = useState("");
   const [notes, setNotes] = useState("");
 
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+
+    const newCard = {
+      subject: subject,
+      duration: duration,
+      materials: materials,
+      notes: notes,
+    };
+
+    console.log(subject);
+    console.log(duration);
+    console.log(materials);
+    console.log(notes);
+
+    addCard(newCard); /* Passes the object up to my app.jsx --  */
+
+    /* reset values: */
+    setSubject("");
+    setDuration("15");
+    setMaterials("");
+    setNotes("");
+  };
+
   return (
     <main>
       <div id="logpage-div">
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <label htmlFor="school-subject">Subject: </label>
           <br />
           <select
