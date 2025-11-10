@@ -7,15 +7,27 @@ import HomePage from "./components/HomePage/HomePage";
 import LoadingPage from "./components/LoadingPage/LoadingPage";
 import LogPage from "./components/LogPage/LogPage";
 import ViewerPage from "./components/ViewerPage/ViewerPage";
+import { useState } from "react";
 
 function App() {
+  const [cards, setCards] = useState(
+    []
+  ); /* array that holds the cards. starts empty */
+
+  const addCard = (cardData) => {
+    setCards([
+      ...cards,
+      cardData,
+    ]); /* Function to place new object into the cards array at the end. */
+  };
+
   return (
     <div id="app-main-container-div">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/log" element={<LogPage />} />
+        <Route path="/log" element={<LogPage addCard={addCard} />} />
         <Route path="/viewer" element={<ViewerPage />} />
         <Route path="/loading" element={<LoadingPage />} />
         <Route path="*" element={<Navigate to="/" />} />

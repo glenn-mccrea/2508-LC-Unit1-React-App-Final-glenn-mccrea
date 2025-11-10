@@ -1,30 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import "./log-page.css";
 
-const LogPage = () => {
+const LogPage = ({ addCard }) => {
+  const [subject, setSubject] =
+    useState(""); /* define the useState for all items */
+  const [duration, setDuration] = useState("15");
+  const [materials, setMaterials] = useState("");
+  const [notes, setNotes] = useState("");
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+
+    const newCard = {
+      subject: subject,
+      duration: duration,
+      materials: materials,
+      notes: notes,
+    };
+
+    console.log(subject);
+    console.log(duration);
+    console.log(materials);
+    console.log(notes);
+
+    addCard(newCard); /* Passes the object up to my app.jsx --  */
+
+    /* reset values: */
+    setSubject("");
+    setDuration("15");
+    setMaterials("");
+    setNotes("");
+  };
+
   return (
     <main>
       <div id="logpage-div">
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <label htmlFor="school-subject">Subject: </label>
           <br />
-          <select id="school-subject" name="school-subject">
+          <select
+            id="school-subject"
+            name="school-subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          >
+            {/* this means grab the value of what the user selected */}
             <option value="">Choose a subject</option>
-            <option value="english">English/Language Arts</option>
-            <option value="math">Mathematics</option>
-            <option value="science">Science</option>
-            <option value="social-studies">Social Studies/History</option>
-            <option value="foreign-language">Foreign Language</option>
-            <option value="art">Art</option>
-            <option value="music">Music</option>
-            <option value="computer-science">Computer Science</option>
+            <option value="English">English/Language Arts</option>
+            <option value="Math">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="Social-Studies">Social Studies/History</option>
+            <option value="Foreign-Language">Foreign Language</option>
+            <option value="Art">Art</option>
+            <option value="Music">Music</option>
+            <option value="Computer-Science">Computer Science</option>
           </select>
           <br />
           <br />
 
           <label htmlFor="activity-duration">Duration: </label>
           <br />
-          <select name="activity-duration" id="activity-duration">
+          <select
+            name="activity-duration"
+            id="activity-duration"
+            value={duration}
+            onChange={(e) => setDuration(e.target.value)}
+          >
             <option value="15">15 Minutes</option>
             <option value="20">20 Minutes</option>
             <option value="30">30 Minutes</option>
@@ -43,6 +84,8 @@ const LogPage = () => {
             id="materials-input"
             name="materials"
             placeholder="Enter materials used"
+            value={materials}
+            onChange={(e) => setMaterials(e.target.value)}
           />
           <br />
           <br />
@@ -54,6 +97,8 @@ const LogPage = () => {
             name="notes"
             placeholder="Activity notes"
             style={{ height: "100px" }}
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
           />
           <br />
 

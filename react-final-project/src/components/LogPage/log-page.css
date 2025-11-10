@@ -15,4 +15,5 @@ form {
   border-radius: 0.75rem;
   min-height: auto;
   padding: 5%;
+  min-width: 300px;
 }
