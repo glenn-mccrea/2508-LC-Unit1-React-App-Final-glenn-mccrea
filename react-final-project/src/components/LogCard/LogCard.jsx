@@ -1,5 +1,6 @@
 import React from "react";
 import "./logcard.css";
+import ReuseButton from "../ReuseButton/ReuseButton";
 
 const LogCard = () => {
   return (
@@ -15,12 +16,7 @@ const LogCard = () => {
         </div>
         <div id="materials-container-div">
           <p>Materials used:</p>
-          <li id="materials-list-item">
-            placeholder placeholder placeholder placeholder placeholder
-            placeholder placeholder placeholder placeholder placeholder
-            placeholder placeholder placeholder placeholder placeholder
-            placeholder placeholder placeholder
-          </li>
+          <li id="materials-list-item">placeholder placeholder placeholder</li>
         </div>
         <div id="notes-container-div">
           <p>Notes:</p>
@@ -32,6 +28,7 @@ const LogCard = () => {
           </li>
         </div>
       </ul>
+      <ReuseButton idName={"delete-button"} text={"Delete Activity"} />
     </div>
   );
 };
