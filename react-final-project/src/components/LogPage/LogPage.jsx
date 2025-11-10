@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./log-page.css";
 
-const LogPage = () => {
+const LogPage = ({ addCard }) => {
+  const [subject, setSubject] = (useState = "");
+  const [duration, setDuration] = (useState = "15");
+  const [materials, setMaterials] = useState("");
+  const [notes, setNotes] = (useState = "");
+
   return (
     <main>
       <div id="logpage-div">
         <form action="">
           <label htmlFor="school-subject">Subject: </label>
           <br />
-          <select id="school-subject" name="school-subject">
+          <select
+            id="school-subject"
+            name="school-subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          >
+            {/* this means grab the value of what the user selected */}
             <option value="">Choose a subject</option>
             <option value="english">English/Language Arts</option>
             <option value="math">Mathematics</option>
