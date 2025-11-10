@@ -46,14 +46,14 @@ const LogPage = ({ addCard }) => {
           >
             {/* this means grab the value of what the user selected */}
             <option value="">Choose a subject</option>
-            <option value="english">English/Language Arts</option>
-            <option value="math">Mathematics</option>
-            <option value="science">Science</option>
-            <option value="social-studies">Social Studies/History</option>
-            <option value="foreign-language">Foreign Language</option>
-            <option value="art">Art</option>
-            <option value="music">Music</option>
-            <option value="computer-science">Computer Science</option>
+            <option value="English">English/Language Arts</option>
+            <option value="Math">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="Social-Studies">Social Studies/History</option>
+            <option value="Foreign-Language">Foreign Language</option>
+            <option value="Art">Art</option>
+            <option value="Music">Music</option>
+            <option value="Computer-Science">Computer Science</option>
           </select>
           <br />
           <br />
