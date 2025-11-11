@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  align-items: center;
   justify-content: center;
   height: 100%;
 }
@@ -17,7 +16,6 @@
   margin: 5%;
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.75rem;
-  min-height: auto;
   padding: 5%;
 }
 
@@ -28,6 +26,6 @@
   color: white;
 }
 
-h2 {
+#homepage-text-container h2 {
   font-size: 2rem;
 }
