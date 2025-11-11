@@ -5,24 +5,24 @@ import ReuseButton from "../ReuseButton/ReuseButton";
 const LogCard = ({ subject, duration, materials, notes }) => {
   return (
     <div className="main-card-div">
-      <ul>
+      <div className="card-grid-container">
         <div id="subject-container-div">
           <p>Subject:</p>
-          <li id="subject-list-item">{subject}</li>
+          <p id="subject-list-item">{subject}</p>
         </div>
         <div id="activity-duration-container-div">
           <p>Activity duration:</p>
-          <li id="activity-duration-list-item">{duration}</li>
+          <p id="activity-duration-list-item">{duration}</p>
         </div>
         <div id="materials-container-div">
           <p>Materials used:</p>
-          <li id="materials-list-item">{materials}</li>
+          <p id="materials-list-item">{materials}</p>
         </div>
         <div id="notes-container-div">
           <p>Notes:</p>
-          <li id="notes-list-item">{notes}</li>
+          <p id="notes-list-item">{notes}</p>
         </div>
-      </ul>
+      </div>
       <ReuseButton idName={"delete-button"} text={"Delete Activity"} />
     </div>
   );

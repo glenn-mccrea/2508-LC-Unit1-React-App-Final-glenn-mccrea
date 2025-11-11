@@ -1,18 +1,7 @@
 #viewer-page-div {
-  font-size: 1.5rem;
   display: flex;
-  flex-direction: row;
-  margin: none;
-  flex: 1;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: auto;
-}
-
-form {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 0.75rem;
-  min-height: auto;
-  padding: 5%;
+  height: 100%;
 }
