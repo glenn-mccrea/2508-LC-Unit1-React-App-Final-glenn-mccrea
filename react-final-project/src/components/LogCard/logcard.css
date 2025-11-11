@@ -2,12 +2,15 @@
   font-size: 1.25rem;
   margin-top: 5px;
   min-width: 300px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .card-grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(3, 1fr);
+  width: 100%;
 }
 
 .card-grid-container > div {
