@@ -1,6 +1,7 @@
 import React from "react";
 import "./homepage.css";
 import background from "./homepage-image.jpg";
+import { Link } from "react-router";
 
 const HomePage = () => {
   return (
@@ -14,7 +15,10 @@ const HomePage = () => {
           </p>
           <br />
           <h3>
-            To get started, <a href="">Log Now</a>
+            To get started,
+            <Link to="/viewer" className="button-div">
+              Log Viewer
+            </Link>
           </h3>
         </section>
       </div>
