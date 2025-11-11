@@ -7,7 +7,6 @@ const LogPage = ({ addCard }) => {
   const [duration, setDuration] = useState("15");
   const [materials, setMaterials] = useState("");
   const [notes, setNotes] = useState("");
-  const [id, setId] = useState("");
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -20,11 +19,7 @@ const LogPage = ({ addCard }) => {
       notes: notes,
     };
 
-    console.log(id);
-    console.log(subject);
-    console.log(duration);
-    console.log(materials);
-    console.log(notes);
+    console.log(newCard);
 
     addCard(newCard); /* Passes the object up to my app.jsx --  */
 
@@ -33,7 +28,6 @@ const LogPage = ({ addCard }) => {
     setDuration("15");
     setMaterials("");
     setNotes("");
-    setId("");
   };
 
   return (
