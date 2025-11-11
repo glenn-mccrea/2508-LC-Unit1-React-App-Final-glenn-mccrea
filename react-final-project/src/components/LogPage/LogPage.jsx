@@ -19,8 +19,6 @@ const LogPage = ({ addCard }) => {
       notes: notes,
     };
 
-    console.log(newCard);
-
     addCard(newCard); /* Passes the object up to my app.jsx --  */
 
     /* reset values: */
