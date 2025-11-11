@@ -1,5 +1,4 @@
-#no-logs-statement p {
-  text-align: center;
+#loading-page-main-div p {
   color: #fff;
   font-size: 1.25rem;
 }
@@ -7,11 +6,12 @@
 #loading-page-main-div {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #222;
   border-radius: 0.75rem;
-  margin: 20px;
+  margin: 5%;
+  height: 50%;
 }
 
 .loader {

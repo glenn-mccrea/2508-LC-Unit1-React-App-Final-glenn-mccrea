@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./loading-page.css";
+import { Link } from "react-router";
 
 const LoadingPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,13 @@ const LoadingPage = () => {
       ) : (
         <div id="no-logs-statement">
           <p>Sorry, no log items to see here.</p>
+          <br />
+          <p>
+            To get started,
+            <Link to="/log" className="button-div">
+              Log Activity
+            </Link>
+          </p>
         </div>
       )}
     </div>
