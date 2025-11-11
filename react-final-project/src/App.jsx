@@ -28,7 +28,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/log" element={<LogPage addCard={addCard} />} />
-        <Route path="/viewer" element={<ViewerPage />} />
+        {/* Passing down 'addCard' as a prop. */}
+        <Route path="/viewer" element={<ViewerPage cards={cards} />} />
+        {/* Passing down cards as a prop. */}
         <Route path="/loading" element={<LoadingPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
