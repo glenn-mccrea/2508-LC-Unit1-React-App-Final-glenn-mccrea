@@ -1,14 +1,14 @@
 header {
   background-color: #0f2d2e;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 #header-title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 #header-nav {
@@ -17,7 +17,7 @@ header {
   color: black;
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   border-top: solid #000 5px;
 }
@@ -25,22 +25,10 @@ header {
 #header-nav-button-container {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-self: center;
   position: relative;
   padding-bottom: 30px;
-}
-.button-div {
-  background-color: #000;
-  border-radius: 0.75rem;
-  box-sizing: border-box;
-  color: #ffffff;
-  font-size: 1.125rem;
-  font-weight: 400;
-  padding: 0.75rem 1.2rem;
-  text-align: center;
-  width: auto;
-  margin: 10px;
 }
 
 #mobile-menu {

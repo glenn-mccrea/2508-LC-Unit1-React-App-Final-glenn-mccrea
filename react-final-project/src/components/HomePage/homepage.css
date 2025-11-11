@@ -2,25 +2,30 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: none;
+  margin: 0;
   background-image: url("/react-final-project/src/assets/homepage-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  flex: 1;
-  display: flex;
-  align-items: center;
+  background-position: center;
   justify-content: center;
+  height: 100%;
 }
 
 #homepage-text-container {
   color: white;
   margin: 5%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0.75rem;
-  min-height: auto;
   padding: 5%;
 }
 
-img {
-  max-width: auto;
+ {
+  color: white;
+}
+#homepage-text-container p {
+  color: white;
+}
+
+#homepage-text-container h2 {
+  font-size: 2rem;
 }

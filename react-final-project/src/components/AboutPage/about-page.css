@@ -1,15 +1,15 @@
 #aboutpage-div {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin: none;
+  margin: 0;
   background-image: url("/react-final-project/src/assets/homepage-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  flex: 1;
-  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 #aboutpage-text-container {
@@ -19,4 +19,7 @@
   border-radius: 0.75rem;
   min-height: auto;
   padding: 5%;
+}
+#aboutpage-text-container h2 {
+  font-size: 2rem;
 }

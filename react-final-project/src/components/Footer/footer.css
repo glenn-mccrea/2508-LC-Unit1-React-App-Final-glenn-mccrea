@@ -1,20 +1,9 @@
 footer {
-  background-color: #194c4d;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f2d2e;
   padding: 15px;
   border-top: solid #000000 5px;
-}
-
-.button-div-footer {
-  background-color: #000000;
-  border-radius: 0.75rem;
-  box-sizing: border-box;
-  color: #ffffff;
-  font-size: 0.8;
-  font-weight: 400;
-  padding: 0.75rem 1.2rem;
-  text-align: center;
-  width: auto;
-  margin: 10px;
 }

@@ -16,8 +16,8 @@ const HomePage = () => {
           <br />
           <h3>
             To get started,
-            <Link to="/viewer" className="button-div">
-              Log Viewer
+            <Link to="/log" className="button-div">
+              Log Activity
             </Link>
           </h3>
         </section>

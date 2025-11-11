@@ -1,39 +1,27 @@
 .main-card-div {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 5px;
   min-width: 300px;
-  width: auto;
-  padding: 5%;
-  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 700px;
 }
 
-p {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000;
+.card-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
 }
 
-ul div {
+.card-grid-container > div {
   background-color: #999;
   padding: 5px;
-  border-top: 4px solid #777;
-  border-right: 4px solid #777;
+  border-top: 5px solid #777;
+  border-right: 5px solid #777;
 }
 
 #notes-container-div {
   background-color: #ccc;
-}
-
-.main-card-div ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-}
-
-.main-card-div ul {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
 }
 
 #subject-container-div {
@@ -65,7 +53,7 @@ ul div {
 }
 
 @media (max-width: 768px) {
-  .main-card-div ul {
+  .card-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
@@ -89,4 +77,18 @@ ul div {
     grid-column: 1;
     grid-row: 4;
   }
+}
+
+#delete-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.1rem;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  min-width: 300px;
+  height: 50px;
+  background-color: #591e1e;
+  cursor: pointer;
 }
