@@ -8,7 +8,16 @@ const ViewerPage = ({ cards }) => {
     <main>
       <div id="viewer-page-div">
         <div id="card-holder-container">
-          <LogCard />
+          {/* Below: map loops through the array as many times as there are contents. Everytime it does run, it pulls out the data and places it onto a LogCard. */}
+          {cards.map((card) => (
+            <LogCard
+              key={card.id}
+              subject={card.subject}
+              duration={card.duration}
+              materials={card.materials}
+              notes={card.notes}
+            />
+          ))}
         </div>
       </div>
     </main>
