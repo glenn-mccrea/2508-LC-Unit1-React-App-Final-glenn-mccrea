@@ -12,6 +12,7 @@ const LogPage = ({ addCard }) => {
     ev.preventDefault();
 
     const newCard = {
+      id: Date.now(),
       subject: subject,
       duration: duration,
       materials: materials,
