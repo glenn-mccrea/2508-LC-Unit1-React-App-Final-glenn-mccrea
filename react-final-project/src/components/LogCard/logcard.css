@@ -6,7 +6,7 @@
 
 .card-grid-container {
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(3, 1fr);
 }
 
@@ -53,6 +53,26 @@
   .card-grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+
+  #subject-container-div {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #activity-duration-container-div {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #materials-container-div {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #notes-container-div {
+    grid-column: 1;
+    grid-row: 4;
   }
 }
 
