@@ -12,16 +12,12 @@ const LogPage = ({ addCard }) => {
     ev.preventDefault();
 
     const newCard = {
+      id: Date.now(),
       subject: subject,
       duration: duration,
       materials: materials,
       notes: notes,
     };
-
-    console.log(subject);
-    console.log(duration);
-    console.log(materials);
-    console.log(notes);
 
     addCard(newCard); /* Passes the object up to my app.jsx --  */
 
