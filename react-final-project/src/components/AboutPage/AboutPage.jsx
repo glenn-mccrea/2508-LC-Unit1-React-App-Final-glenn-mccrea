@@ -1,4 +1,4 @@
-import "./AboutPage.css";
+import "./about-page.css";
 import React from "react";
 import background from "./about-page-background.jpg";
 
