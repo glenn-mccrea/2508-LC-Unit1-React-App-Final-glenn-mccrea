@@ -8,6 +8,7 @@ const ViewerPage = ({ cards }) => {
 
   {
     if (cards.length === 0) {
+      /* if no cards (logs) have been added, the loading page appears */
       return <LoadingPage />;
     } else {
       return (
