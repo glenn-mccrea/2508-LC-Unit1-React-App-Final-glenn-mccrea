@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./log-page.css";
+import { useNavigate } from "react-router";
 
 const LogPage = ({ addCard }) => {
   const [subject, setSubject] =
@@ -7,6 +8,8 @@ const LogPage = ({ addCard }) => {
   const [duration, setDuration] = useState("15");
   const [materials, setMaterials] = useState("");
   const [notes, setNotes] = useState("");
+
+  const navigate = useNavigate();
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -26,6 +29,8 @@ const LogPage = ({ addCard }) => {
     setDuration("15");
     setMaterials("");
     setNotes("");
+
+    navigate("/viewer");
   };
 
   return (
