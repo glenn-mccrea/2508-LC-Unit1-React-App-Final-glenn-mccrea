@@ -21,6 +21,12 @@ function App() {
     ]); /* Function to place new object into the cards array at the end. */
   };
 
+  const deleteCard = (cardId) => {
+    setCards(
+      cards.filter((obj) => obj.id !== cardId)
+    ); /* Keeping all the cards except for the one we don't want. */
+  };
+
   return (
     <div id="app-main-container-div">
       <Header />
@@ -29,7 +35,10 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/log" element={<LogPage addCard={addCard} />} />
         {/* Passing down 'addCard' as a prop. */}
-        <Route path="/viewer" element={<ViewerPage cards={cards} />} />
+        <Route
+          path="/viewer"
+          element={<ViewerPage cards={cards} deleteCard={deleteCard} />}
+        />
         {/* Passing down cards as a prop. */}
         <Route path="/loading" element={<LoadingPage />} />
         <Route path="*" element={<Navigate to="/" />} />
