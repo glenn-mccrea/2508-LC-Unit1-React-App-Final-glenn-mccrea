@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./log-page.css";
-import background from "../ViewerPage/background-image-viewer.jpg";
 
 const LogPage = ({ addCard }) => {
   const [subject, setSubject] =
@@ -31,7 +30,7 @@ const LogPage = ({ addCard }) => {
 
   return (
     <main>
-      <div id="logpage-div" style={{ backgroundImage: `url(${background})` }}>
+      <div id="logpage-div">
         <div id="form-container">
           <form onSubmit={handleSubmit}>
             <label htmlFor="school-subject">Subject: </label>
