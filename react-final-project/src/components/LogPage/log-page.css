@@ -31,3 +31,8 @@ form {
   width: 75%;
   min-width: 275px;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+}
