@@ -5,6 +5,7 @@ import LoadingPage from "../LoadingPage/LoadingPage";
 
 const ViewerPage = ({ cards }) => {
   /* Receives the card that is pulled from app.jsx */
+  /* conditional rendering below */
 
   {
     if (cards.length === 0) {
