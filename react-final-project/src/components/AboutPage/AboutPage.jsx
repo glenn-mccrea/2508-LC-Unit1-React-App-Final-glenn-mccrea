@@ -1,6 +1,7 @@
 import "./about-page.css";
 import React from "react";
 import background from "./about-page-background.jpg";
+import image from "./about-page-img-element.jpg";
 
 const AboutPage = () => {
   return (
@@ -15,6 +16,10 @@ const AboutPage = () => {
             web app that would help Teachers track school day learning and
             activities in a clean, easy to use way.
           </h3>
+          <img
+            src={image}
+            alt="A Student watching a school lesson on a computer."
+          />
         </section>
       </div>
     </main>
