@@ -24,8 +24,6 @@ const LogCard = ({ subject, duration, materials, notes }) => {
         </div>
       </div>
       <ReuseButton idName={"delete-button"} text={"Delete Activity"} />
-      <br />
-      <br />
     </div>
   );
 };
