@@ -1,7 +1,6 @@
 import React from "react";
 import "./viewer-page.css";
 import LogCard from "../LogCard/LogCard";
-import LoadingPage from "../LoadingPage/LoadingPage";
 
 const ViewerPage = ({ cards }) => {
   /* Receives the card that is pulled from app.jsx */
