@@ -20,6 +20,26 @@ const AboutPage = () => {
             src={image}
             alt="A Student watching a school lesson on a computer."
           />
+
+          <h3>We are excited to be expanding HSDT!</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Features to come:</th>
+                <th>Timeframe:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Filtering results by subject</td>
+                <td>Spring 2026</td>
+              </tr>
+              <tr>
+                <td>Editing previous entries</td>
+                <td>Spring 2026</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </div>
     </main>
