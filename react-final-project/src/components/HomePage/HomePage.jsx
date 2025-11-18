@@ -10,8 +10,19 @@ const HomePage = () => {
         <section id="homepage-text-container">
           <h2>Welcome to Homeschool Day Tracker!</h2>
           <p>
-            We exist to help Teachers track school day learning and activities
-            in a clean, easy to use log.
+            <h3>
+              We exist to help Teachers track school day learning activities in
+              a clean, easy to use log.
+            </h3>
+
+            <p>Easily keep track of:</p>
+            <ul>
+              <li>Subjects covered</li>
+              <li>Duration of the activity</li>
+              <li>Materials used for instruction</li>
+              <li>Add freeform notes to each activity</li>
+              <li>More to come in future updates!</li>
+            </ul>
           </p>
           <br />
           <h3>
