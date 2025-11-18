@@ -2,6 +2,7 @@ import "./about-page.css";
 import React from "react";
 import background from "./about-page-background.jpg";
 import image from "./about-page-img-element.jpg";
+import ReuseButton from "../ReuseButton/ReuseButton";
 
 const AboutPage = () => {
   return (
@@ -21,7 +22,9 @@ const AboutPage = () => {
             alt="A Student watching a school lesson on a computer."
           />
 
-          <h3>We are excited to be expanding HSDT!</h3>
+          <h3 style={{ paddingTop: "50px" }}>
+            We are excited to be expanding HSDT!
+          </h3>
           <table>
             <thead>
               <tr>
@@ -40,6 +43,15 @@ const AboutPage = () => {
               </tr>
             </tbody>
           </table>
+          <p style={{ paddingTop: "50px" }}>
+            Comments or suggestions?
+            <a
+              href="mailto:youremail@example.com?subject=HSDT Feedback"
+              style={{ textDecoration: "none" }}
+            >
+              <ReuseButton idName={"contact-button"} text={"Contact Us"} />
+            </a>
+          </p>
         </section>
       </div>
     </main>
