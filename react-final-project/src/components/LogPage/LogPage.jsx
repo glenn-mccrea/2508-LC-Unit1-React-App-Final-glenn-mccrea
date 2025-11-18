@@ -41,12 +41,17 @@ const LogPage = ({ addCard }) => {
             <label htmlFor="school-subject">Subject: </label>
             <br />
             <select
+              required /*Used for form validation */
               id="school-subject"
               name="school-subject"
               value={subject}
-              onChange={(e) => setSubject(e.target.value)}
+              onChange={
+                (e) =>
+                  setSubject(
+                    e.target.value
+                  ) /* this means grab the value of what the user selected */
+              }
             >
-              {/* this means grab the value of what the user selected */}
               <option value="">Choose a subject</option>
               <option value="English">English/Language Arts</option>
               <option value="Math">Mathematics</option>
@@ -80,6 +85,7 @@ const LogPage = ({ addCard }) => {
             <label htmlFor="materials-input">Materials Used: </label>
             <br />
             <input
+              required /*Used for form validation */
               type="text"
               id="materials-input"
               name="materials"
