@@ -43,7 +43,7 @@ const AboutPage = () => {
               </tr>
             </tbody>
           </table>
-          <p style={{ paddingTop: "50px" }}>
+          <div style={{ paddingTop: "50px" }}>
             Comments or suggestions?
             <a
               href="mailto:youremail@example.com?subject=HSDT Feedback"
@@ -51,7 +51,7 @@ const AboutPage = () => {
             >
               <ReuseButton idName={"contact-button"} text={"Contact Us"} />
             </a>
-          </p>
+          </div>
         </section>
       </div>
     </main>
