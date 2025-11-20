@@ -9,7 +9,7 @@ const HomePage = () => {
       <div id="homepage-div" style={{ backgroundImage: `url(${background})` }}>
         <section id="homepage-text-container">
           <h2>Welcome to Homeschool Day Tracker!</h2>
-          <p>
+          <div>
             <h3>
               We exist to help Teachers track school day learning activities in
               a clean, easy to use log.
@@ -23,7 +23,7 @@ const HomePage = () => {
               <li>Add freeform notes to each activity</li>
               <li>More to come in future updates!</li>
             </ul>
-          </p>
+          </div>
           <br />
           <h3>
             To get started,
