@@ -2,7 +2,7 @@ import React from "react";
 import "./logcard.css";
 import ReuseButton from "../ReuseButton/ReuseButton";
 
-const LogCard = ({ subject, duration, materials, notes }) => {
+const LogCard = ({ id, subject, duration, materials, notes, deleteCard }) => {
   return (
     <div className="main-card-div">
       <div className="card-grid-container">
@@ -23,7 +23,11 @@ const LogCard = ({ subject, duration, materials, notes }) => {
           <p id="notes-list-item">{notes}</p>
         </div>
       </div>
-      <ReuseButton idName={"delete-button"} text={"Delete Activity"} />
+      <ReuseButton
+        idName={"delete-button"}
+        text={"Delete Activity"}
+        onClick={() => deleteCard(id)}
+      />
     </div>
   );
 };
