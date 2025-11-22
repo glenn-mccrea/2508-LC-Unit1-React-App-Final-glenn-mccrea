@@ -6,7 +6,7 @@ header {
 
 #header-title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -41,7 +41,17 @@ header {
   transition: opacity 1000ms, visibility 1000ms;
 }
 
+#logo-image {
+  height: 48px;
+  width: 48px;
+  padding: 20px;
+}
+
 @media (max-width: 480px) {
+  header {
+    height: min-content;
+  }
+
   #expanded-menu-items {
     display: none;
   }
@@ -52,6 +62,7 @@ header {
     color: #ffffff;
     border-radius: 0.75rem;
     padding: 0.75rem 1.2rem;
+    font-size: 0.8rem;
   }
 
   #dropdown-menu-items {
@@ -86,5 +97,15 @@ header {
 
   #header-nav-button-container {
     padding-bottom: 0px;
+    min-width: 88px;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  img {
+    padding: 20px;
+    display: flex;
   }
 }
