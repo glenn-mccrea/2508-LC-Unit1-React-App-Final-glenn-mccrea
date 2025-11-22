@@ -1,10 +1,10 @@
 .main-card-div {
   font-size: 1.25rem;
-  margin-top: 5px;
+  margin-top: 10px;
   min-width: 300px;
   width: 100%;
   max-width: 700px;
-
+  border: #222 2px solid;
   box-sizing: border-box;
   box-shadow: 5px 5px 20px black;
   display: flex;
