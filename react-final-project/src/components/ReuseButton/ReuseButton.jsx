@@ -3,11 +3,11 @@ import "./reuse-button.css";
 
 const ReuseButton = ({ text, idName, onClick }) => {
   return (
-    <div>
-      <div className="reuse-button" id={idName} onClick={onClick}>
+    <>
+      <button className="reuse-button" id={idName} onClick={onClick}>
         {text}
-      </div>
-    </div>
+      </button>
+    </>
   );
 };
 
