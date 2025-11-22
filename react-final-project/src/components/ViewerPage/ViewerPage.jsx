@@ -17,19 +17,21 @@ const ViewerPage = ({ cards, deleteCard }) => {
       <main>
         <div id="viewer-page-div">
           {/* Below: map loops through the array as many times as there are contents. Everytime it does run, it pulls out the data and places it onto a LogCard. */}
-          {cards.map((card) => (
-            <LogCard
-              key={card.id}
-              id={
-                card.id
-              } /*{Need this for my delete function because react "consumes" the key} */
-              subject={card.subject}
-              duration={card.duration}
-              materials={card.materials}
-              notes={card.notes}
-              deleteCard={deleteCard} /*Pass down the function*/
-            />
-          ))}
+          {cards
+            .map((card) => (
+              <LogCard
+                key={card.id}
+                id={
+                  card.id
+                } /*{Need this for my delete function because react "consumes" the key} */
+                subject={card.subject}
+                duration={card.duration}
+                materials={card.materials}
+                notes={card.notes}
+                deleteCard={deleteCard} /*Pass down the function*/
+              />
+            ))
+            .reverse()}
         </div>
       </main>
     );
