@@ -2,12 +2,14 @@ import React from "react";
 import "./header.css";
 import ReuseButton from "../ReuseButton/ReuseButton";
 import { Link } from "react-router";
+import image from "./logo.png";
 
 const Header = () => {
   return (
     <header>
       <div id="header-title">
-        <h1>📚 Homeschool Day Tracker 🦅</h1>
+        <img src={image} alt="Homeschool day tracker logo" />
+        <h1>Homeschool Day Tracker</h1>
       </div>
       <div id="header-nav">
         <nav id="header-nav-button-container">
