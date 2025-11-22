@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <div id="header-title">
-        <img src={image} alt="Homeschool day tracker logo" />
+        <img id="logo-image" src={image} alt="Homeschool day tracker logo" />
         <h1>Homeschool Day Tracker</h1>
       </div>
       <div id="header-nav">
