@@ -41,3 +41,7 @@ td {
   padding-right: 115px;
   border: #444 2px solid;
 }
+
+#contact-button {
+  font-size: 0.9rem;
+}
